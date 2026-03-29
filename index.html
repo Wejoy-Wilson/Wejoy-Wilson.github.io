@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wejoy — Data Engineer, Data Analyst, Database & Data Warehouse Developer, AI App Developer">
+<meta name="robots" content="index, follow">
+<title>Wejoy — Data Engineer & Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ░░ PROTECTION — blocks right-click, devtools, drag ░░ -->
+<script src="script.js"></script>
+
+<!-- ░░ BACKGROUND LAYERS ░░ -->
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="orb orb-1" aria-hidden="true"></div>
+<div class="orb orb-2" aria-hidden="true"></div>
+<div class="orb orb-3" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#home" class="nav-brand">We<span>joy</span><em>.</em></a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-badge">
+    <span class="badge-dot"></span>
+    <span>Available</span>
+  </div>
+
+  <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <p class="hero-pre animate-1">// Data Professional — Lincoln, UK</p>
+
+    <h1 class="hero-name animate-2">
+      Hello,<br>I'm <span class="name-accent">Wejoy</span>
+    </h1>
+
+    <div class="hero-pills animate-3">
+      <span class="pill pill-teal">Data Engineer</span>
+      <span class="pill pill-blue">Data Analyst</span>
+      <span class="pill pill-purple">DW Developer</span>
+      <span class="pill pill-orange">App Developer</span>
+    </div>
+
+    <p class="hero-bio animate-4">
+      I design and build the systems that turn raw, scattered data into
+      structured insight — from real-time pipelines and data warehouses
+      to AI-powered applications.
+    </p>
+
+    <div class="hero-cta animate-5">
+      <a href="#projects" class="btn-primary">See my work</a>
+      <a href="#contact" class="btn-outline">Get in touch</a>
+    </div>
+
+    <!-- floating terminal card 
+    <div class="hero-terminal animate-6">
+      <div class="terminal-bar">
+        <span class="t-dot red"></span>
+        <span class="t-dot yellow"></span>
+        <span class="t-dot green"></span>
+        <span class="t-title">wejoy@dev ~ pipeline.py</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="t-kw">import</span> <span class="t-mod">pandas</span> <span class="t-kw">as</span> pd</p>
+        <p><span class="t-kw">from</span> <span class="t-mod">pipeline</span> <span class="t-kw">import</span> DataWarehouse</p>
+        <p>&nbsp;</p>
+        <p><span class="t-fn">dw</span> = DataWarehouse(<span class="t-str">"production"</span>)</p>
+        <p><span class="t-fn">dw</span>.load(<span class="t-str">"crm"</span>, <span class="t-str">"erp"</span>, <span class="t-str">"api"</span>)</p>
+        <p><span class="t-fn">dw</span>.transform().serve()</p>
+        <p>&nbsp;</p>
+        <p class="t-comment"># ✓ Pipeline complete — 2.4M rows processed</p>
+        <p class="t-cursor">█</p>
+      </div>
+    </div>-->
+  </div>
+
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label">
+      <span class="label-num">01</span>
+      <span class="label-line"></span>
+      <span class="label-text">About me</span>
+    </div>
+
+    <div class="about-grid">
+      <!-- Photo -->
+      <div class="about-photo-col reveal">
+        <div class="photo-frame">
+           <!--
+            ══════════════════════════════════
+            ADD YOUR PHOTO:
+            1. Put your photo in the assets/ folder
+            2. Name it: photo.jpg
+            3. The placeholder below will be replaced automatically
+            ══════════════════════════════════
+          -->
+          <div class="photo-placeholder" id="photo-placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+            <p>Add assets/photo.jpg<br>to show your photo here</p>
+          </div>
+          <img src="assets/photo.jpg"
+               alt="Wejoy"
+               class="photo-img"
+               id="photo-img"
+               style="display:none"
+               onload="this.style.display='block'; document.getElementById('photo-placeholder').style.display='none';"
+               onerror="this.style.display='none'; document.getElementById('photo-placeholder').style.display='flex';">
+          <div class="photo-glow"></div>
+        </div>
+        <!-- Corner accents -->
+        <div class="corner-tl"></div>
+        <div class="corner-br"></div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text-col">
+        <h2 class="section-title reveal">The person<br>behind the data.</h2>
+
+        <div class="about-body reveal">
+          <p>
+            I'm <strong>Wejoy</strong>, a data professional who works across the full
+            data stack — engineering robust pipelines, analysing complex datasets,
+            designing and building data warehouses, and shipping AI-powered applications.
+          </p>
+          <p>
+            My approach combines <strong>engineering rigour with analytical curiosity</strong>.
+            I don't just move data from A to B — I architect systems that make data
+            trustworthy, queryable, and genuinely useful to the people who need it.
+          </p>
+          <p>
+            From real-time facial recognition to conversational AI and end-to-end
+            data warehouse design, I enjoy projects that sit at the frontier of
+            what's possible with data.
+          </p>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="about-card">
+            <span class="about-card-label">Speciality</span>
+            <span class="about-card-val">Data Engineering</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Also expert in</span>
+            <span class="about-card-val">Data Warehousing</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Builds</span>
+            <span class="about-card-val">AI Applications</span>
+          </div>
+          <div class="about-card">
+            <span class="about-card-label">Status</span>
+            <span class="about-card-val available">Available ✓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SKILLS
+════════════════════════════════════════ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-label">
+      <span class="label-num">02</span>
+      <span class="label-line"></span>
+      <span class="label-text">Skills & tools</span>
+    </div>
+    <h2 class="section-title reveal">What I work with.</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal" data-color="teal">
+        <div class="skill-icon">⚙</div>
+        <h3>Data Engineering</h3>
+        <ul class="skill-list">
+          <li>Apache Spark</li>
+          <li>Apache Kafka</li>
+          <li>Apache Airflow</li>
+          <li>dbt (data build tool)</li>
+          <li>ETL / ELT Pipelines</li>
+          <li>Batch & Stream Processing</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal" data-color="blue">
+        <div class="skill-icon">📊</div>
+        <h3>Data Analysis</h3>
+        <ul class="skill-list">
+          <li>Python (Pandas, NumPy)</li>
+          <li>SQL (Advanced)</li>
+          <li>Power BI / Tableau</li>
+          <li>Statistical Analysis</li>
+          <li>Data Visualisation</li>
+          <li>Jupyter Notebooks</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal" data-color="purple">
+        <div class="skill-icon">🏗</div>
+        <h3>Data Warehouse</h3>
+        <ul class="skill-list">
+          <li>Snowflake / BigQuery</li>
+          <li>Amazon Redshift</li>
+          <li>Dimensional Modelling</li>
+          <li>Kimball Methodology</li>
+          <li>Star & Snowflake Schema</li>
+          <li>Data Vault 2.0</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal" data-color="orange">
+        <div class="skill-icon">🤖</div>
+        <h3>AI & Machine Learning</h3>
+        <ul class="skill-list">
+          <li>TensorFlow / Keras</li>
+          <li>OpenCV</li>
+          <li>scikit-learn</li>
+          <li>LLM Integration</li>
+          <li>Computer Vision</li>
+          <li>NLP</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal" data-color="pink">
+        <div class="skill-icon">💾</div>
+        <h3>Databases</h3>
+        <ul class="skill-list">
+          <li>PostgreSQL / MySQL</li>
+          <li>Oracle DB</li>
+          <li>MongoDB</li>
+          <li>Redis</li>
+          <li>MS SQL Server</li>
+          <li>Query Optimisation</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal" data-color="green">
+        <div class="skill-icon">☁</div>
+        <h3>Cloud & DevOps</h3>
+        <ul class="skill-list">
+          <li>AWS (S3, Glue, Lambda)</li>
+          <li>Google Cloud Platform</li>
+          <li>Docker / Kubernetes</li>
+          <li>Git / GitHub</li>
+          <li>Linux / Bash</li>
+          <li>CI/CD Pipelines</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-label">
+      <span class="label-num">03</span>
+      <span class="label-line"></span>
+      <span class="label-text">Projects</span>
+    </div>
+    <h2 class="section-title reveal">Things I've built.</h2>
+
+    <!-- ── PROJECT 1 ── -->
+    <article class="project-card reveal">
+      <div class="project-visual vis-face">
+        <div class="vis-glow"></div>
+        <!-- Animated face recognition UI -->
+        <div class="face-scene">
+          <div class="face-frame">
+            <div class="face-scanline"></div>
+            <div class="corner-tl-s"></div>
+            <div class="corner-tr-s"></div>
+            <div class="corner-bl-s"></div>
+            <div class="corner-br-s"></div>
+          </div>
+          <div class="face-info">
+            <span class="face-status">SCANNING</span>
+            <div class="face-bars">
+              <div class="face-bar" style="width:85%"></div>
+              <div class="face-bar" style="width:62%"></div>
+              <div class="face-bar" style="width:91%"></div>
+            </div>
+            <span class="face-conf">Confidence: 97.3%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="proj-meta">
+          <span class="proj-num">01</span>
+          <span class="proj-type">Computer Vision · AI</span>
+        </div>
+        <h3 class="proj-title">Real-Time Face Recognition System</h3>
+        <p class="proj-desc">
+          A live computer vision system that detects and identifies faces from
+          video streams in real time — with sub-second latency, multi-face support,
+          and confidence scoring against a known-persons database.
+        </p>
+
+        <div class="proj-tech">
+          <span>Python</span><span>OpenCV</span><span>TensorFlow</span>
+          <span>face_recognition</span><span>Flask</span><span>NumPy</span>
+        </div>
+
+        <ul class="proj-points">
+          <li>Real-time video processing with live bounding boxes and identity labels</li>
+          <li>Face encoding and matching against enrolled persons database</li>
+          <li>Handles multiple simultaneous faces with per-face confidence scores</li>
+          <li>Runs on standard CPU hardware — no GPU required</li>
+          <li>REST API endpoint for integration with access control systems</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ── PROJECT 2 ── -->
+    <article class="project-card project-card-rev reveal">
+      <div class="project-visual vis-chat">
+        <div class="vis-glow glow-blue"></div>
+        <!-- Animated chat UI -->
+        <div class="chat-scene">
+          <div class="chat-msg user anim-msg-1">Analyse Q3 sales data</div>
+          <div class="chat-msg ai anim-msg-2">
+            Found 3 anomalies in revenue. Q3 dropped 12% vs forecast — primarily in EMEA region.
+          </div>
+          <div class="chat-msg user anim-msg-3">Show root cause</div>
+          <div class="chat-typing anim-msg-4">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="proj-meta">
+          <span class="proj-num">02</span>
+          <span class="proj-type">AI · NLP · Full Stack</span>
+        </div>
+        <h3 class="proj-title">AI Chat Response Application</h3>
+        <p class="proj-desc">
+          An intelligent conversational application powered by large language models,
+          built to handle natural language queries against structured data —
+          returning context-aware, streamed responses in real time.
+        </p>
+
+        <div class="proj-tech">
+          <span>Python</span><span>LLM API</span><span>FastAPI</span>
+          <span>React</span><span>WebSockets</span><span>PostgreSQL</span>
+        </div>
+
+        <ul class="proj-points">
+          <li>Natural language to SQL — query your database in plain English</li>
+          <li>Streamed token-by-token responses via WebSocket connection</li>
+          <li>Multi-turn conversation memory with per-session history</li>
+          <li>Prompt engineering system for domain-specific behaviour</li>
+          <li>Role-based access so different teams see different data</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- ── PROJECT 3 ── -->
+    <article class="project-card reveal">
+      <div class="project-visual vis-dw">
+        <div class="vis-glow glow-purple"></div>
+        <!-- Animated DW diagram -->
+        <div class="dw-scene">
+          <div class="dw-row">
+            <div class="dw-node src">CRM</div>
+            <div class="dw-node src">ERP</div>
+            <div class="dw-node src">API</div>
+          </div>
+          <div class="dw-arrow-row">
+            <div class="dw-flow-line"></div>
+          </div>
+          <div class="dw-row">
+            <div class="dw-node etl">ETL Pipeline</div>
+          </div>
+          <div class="dw-arrow-row">
+            <div class="dw-flow-line"></div>
+          </div>
+          <div class="dw-row">
+            <div class="dw-node stg">Staging</div>
+            <div class="dw-node wh">Data Warehouse</div>
+          </div>
+          <div class="dw-arrow-row">
+            <div class="dw-flow-line"></div>
+          </div>
+          <div class="dw-row">
+            <div class="dw-node mart">Sales Mart</div>
+            <div class="dw-node mart">Finance Mart</div>
+            <div class="dw-node mart">Ops Mart</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-body">
+        <div class="proj-meta">
+          <span class="proj-num">03</span>
+          <span class="proj-type">Data Warehouse · Engineering</span>
+        </div>
+        <h3 class="proj-title">Data Warehouse Design & Build</h3>
+        <p class="proj-desc">
+          End-to-end design and implementation of a production dimensional data warehouse —
+          from source system analysis through schema design, automated ETL pipelines,
+          to BI-ready data marts powering executive dashboards.
+        </p>
+
+        <div class="proj-tech">
+          <span>SQL</span><span>Snowflake</span><span>dbt</span>
+          <span>Airflow</span><span>Star Schema</span><span>Power BI</span>
+        </div>
+
+        <ul class="proj-points">
+          <li>Designed dimensional model — fact & dimension tables using Kimball methodology</li>
+          <li>Built automated ETL pipelines ingesting from CRM, ERP, and external APIs</li>
+          <li>Incremental loading strategy handling millions of rows per run</li>
+          <li>Data quality framework with automated testing via dbt tests</li>
+          <li>Department-level data marts powering 6 executive dashboards</li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════ -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <div class="section-label">
+      <span class="label-num">04</span>
+      <span class="label-line"></span>
+      <span class="label-text">Experience</span>
+    </div>
+    <h2 class="section-title reveal">Where I've worked.</h2>
+
+    <div class="timeline">
+      <!--
+        ══════════════════════════════════════════
+        EDIT YOUR EXPERIENCE BELOW:
+        Replace [Company Name], dates, and descriptions
+        with your real work history.
+        ══════════════════════════════════════════
+      -->
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="tl-date">Dec 2025 — Present</span>
+          <h3 class="tl-role">Production Operative</h3>
+          <span class="tl-company">Pilgrims Europe UK</span>
+          <p class="tl-desc">
+            Designing and maintaining scalable data pipelines, building data warehouse
+            solutions using modern cloud tools, and developing AI-powered applications
+            to support business intelligence and analytics teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="tl-date">Dec 2021 — Nov 2025</span>
+          <h3 class="tl-role">Data Engineer | Data Analyst</h3>
+          <span class="tl-company">Watern Technologies Pvt Ltd</span>
+          <p class="tl-desc">
+            Analysed large datasets to surface business insights, built interactive
+            dashboards and reports in Power BI, and collaborated with engineering
+            teams on data quality, modelling, and pipeline design.
+            Designing and maintaining scalable data pipelines, building data warehouse
+            solutions using modern cloud tools, and developing AI-powered applications
+            to support business intelligence and analytics teams.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="tl-date">Dec 2021 — Nov 2025</span>
+          <h3 class="tl-role">Database Developer | Data warehouse Developer</h3>
+          <span class="tl-company">Watern Technologies Pvt Ltd</span>
+          <p class="tl-desc">
+            Developed and optimised relational database schemas, wrote complex
+            stored procedures and SQL queries, and built ETL processes for
+            operational and reporting data systems.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container container-narrow">
+    <div class="section-label" style="justify-content:center">
+      <span class="label-num">05</span>
+      <span class="label-line"></span>
+      <span class="label-text">Contact</span>
+    </div>
+
+    <h2 class="section-title reveal" style="text-align:center">
+      Let's work<br>together.
+    </h2>
+    <p class="contact-sub reveal">
+      Open to new roles, freelance data projects, and interesting collaborations.
+      Drop me a message — I reply within 24 hours.
+    </p>
+
+    <div class="contact-links reveal">
+      <!--
+        ══════════════════════════════════════
+        EDIT YOUR CONTACT DETAILS:
+        Replace href values with your real links
+        ══════════════════════════════════════
+      -->
+      <!--<a href="mailto:wejoywilson99@gmail.com" class="contact-card">
+        <div class="cc-icon icon-teal">✉</div>
+        <div class="cc-text">
+          <span class="cc-label">Email</span>
+          <span class="cc-val">wejoywilson99@gmail.com</span>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>-->
+
+      <a href="/cdn-cgi/l/email-protection#3f485a5550467f5a525e5653115c5052" class="contact-card">
+        <div class="cc-icon icon-teal">✉</div>
+        <div class="cc-text">
+          <span class="cc-label">Email</span>
+          <span class="cc-val"><span class="__cf_email__" data-cfemail="3c4b595653457c59515d5550125f5351">[email&#160;protected]</span></span>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>
+
+      <a href="https://linkedin.com/in/wejoy-wilson-292b572k21" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <div class="cc-icon icon-blue">in</div>
+        <div class="cc-text">
+          <span class="cc-label">LinkedIn</span>
+          <span class="cc-val">linkedin.com/in/wejoy-wilson-292b572k21</span>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>
+
+      <a href="https://github.com/Wejoy-Wilson" target="_blank" rel="noopener noreferrer" class="contact-card">
+        <div class="cc-icon icon-purple">⌥</div>
+        <div class="cc-text">
+          <span class="cc-label">GitHub</span>
+          <span class="cc-val">github.com/Wejoy-Wilson</span>
+        </div>
+        <div class="cc-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">We<span>joy</span><em>.</em></div>
+    <div class="footer-copy">
+      © <span id="footer-year"></span> Wejoy. All rights reserved.
+    </div>
+    <div class="footer-lock">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 1C8.68 1 6 3.68 6 7v2H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V11a2 2 0 00-2-2h-2V7c0-3.32-2.68-6-6-6zm0 2c2.21 0 4 1.79 4 4v2H8V7c0-2.21 1.79-4 4-4zm0 9a2 2 0 110 4 2 2 0 010-4z"/>
+      </svg>
+      Content protected · View only
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
